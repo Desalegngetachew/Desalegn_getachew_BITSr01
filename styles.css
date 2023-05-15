@@ -1,0 +1,261 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  margin-top: 0;
+  padding-top: 0;
+  padding-left: 20px;
+  padding-right: 3px;
+  width: 100%;
+}
+
+.logo a {
+  font-size: 28px;
+  padding-top: 0;
+  margin-top: 0;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  padding-right: 40px;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.home{
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  height: 100vh;
+  width: 100%;
+  /* background-image: url(./assets/homeImage1.jpg); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+}
+
+.dept1{
+  padding-top: 20px;
+  align-items: center;
+  font-size: 40px;
+  font: bold;
+  color: red;
+  justify-content: center;
+  justify-items: center;
+}
+.dept{
+  padding-top: 20px;
+  align-items: center;
+  font-size: 25px;
+  font: bold;
+  color: red;
+  justify-content: center;
+  justify-items: center;
+}
+.homeUnversity{
+  font-size: large;
+  color: blueviolet;
+  padding-bottom: 18%;
+}
+.about{
+  display: flex;
+  width: 100%;
+  gap: 5px;
+  padding-left: 10%;
+  padding-right: 10%;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  justify-content: center;
+  background-color:darkolivegreen;
+  box-sizing: border-box;
+}
+.nameAndAddress{
+font-size: 20px;
+}
+.about .aboutImage{
+  height: 400px;
+  width: 400px;
+  padding-right: 20px;
+  
+}
+.contactAddress{
+color: coral;
+}
+.briefBio{
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.briefBio .briefBioImage{
+  height: 400px;
+  width: 400px;
+  padding-right: 20px;
+}
+.briefBioContent{
+  font-family: verdana;
+  font-size: 20px;
+  font: bold;
+  justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  word-wrap: break-word;
+}
+.comptenceTitle{
+  padding-left: 20px;
+}
+.developmentComptence{
+  margin-left: 30px;
+}
+.education{
+  display: flex;
+  gap: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.EducationTitle{
+  padding-left: 45px;
+  align-items: center;
+  align-content: center;
+  font-size: 30px;
+}
+.educationDetail{
+  border: solid black 2px;
+  width: 25%;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 10px 10px lightblue;
+}
+.primarySchool{
+  font-size: 30px;
+  padding-bottom: 9px;
+}
+.contact{
+  display: flex;
+  gap: 10px;
+}
+.map{
+  height: 350px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+.contactForm{
+  padding: 15px;
+  display: inline-block;
+  gap: 15px;
+}
+.input2{
+  display: flex;
+  gap:15px;
+  width: 100%;
+}
+.inputField{
+  padding: 11px;
+  margin: 6px;
+}
+.inputFieldName{
+  padding: 11px;
+  margin: 6px;
+  width: 390px;
+}
+.textArea{
+  padding: 11px;
+  margin: 6px;
+  width: 390px;
+}
+.footer {
+  width: 100%;
+  align-items: center;
+
+  display: flex;
+  justify-content: space-around;
+}
+.footerContainer{
+  background-color: #333;
+  color: white;
+}
+.footer ul{
+  padding-top: 15px;
+  padding-bottom: 6px;
+}
+.footer ul li{
+  list-style: none;
+}
+.footer ul li a{
+  color: white;
+}
+.right{
+  padding-bottom: 9px;
+  justify-content: center;
+  justify-items: center;
+  /* align-content: center; */
+  padding-left: 200px;
+}
