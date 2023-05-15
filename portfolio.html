@@ -8,7 +8,7 @@
     </style>
   </head>
   <body>
-    <div class="">
+    <div class="nav-container">
       <nav>
         <div class="logo">
           <a href="#homeId">Desalegn</a>
@@ -21,7 +21,25 @@
           <li><a href="#contactId">Contact</a></li>
         </ul>
       </nav>
+      <div class="menu-icon">
+        <i class="fa fa-bars"></i>
+      </div>
     </div>
+    <script>
+      const menuIcon = document.querySelector('.menu-icon');
+      const navLinks = document.querySelector('.nav-links');
+      const navLinksLi = document.querySelectorAll('.nav-links li');
+    
+      menuIcon.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+    
+      navLinksLi.forEach(li => {
+        li.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+        });
+      });
+    </script>
     <!-- home -->
     <div class="home" id="homeId">
       <div class="hom">
